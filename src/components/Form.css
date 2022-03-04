@@ -1,0 +1,50 @@
+.container {
+  margin: 0 auto;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.form-outer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 80vh;
+  width: 30rem;
+  align-items: center;
+  border: 1px solid rgb(43, 43, 43);
+}
+
+.input-text {
+  font-size: 1.5rem;
+  padding: 08px 15px;
+  border-radius: 6px;
+}
+
+.submit-btn {
+  font-size: 1.5rem;
+  padding: 5px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: black;
+  color: white;
+  transition: all 0.2s ease-in;
+}
+
+.select-input {
+  font-size: 1.5rem;
+  margin-right: 25px;
+}
+
+.radio-label {
+  font-size: 1.5rem;
+  margin-right: 25px;
+}
+.radio-input {
+  height: 1rem;
+  width: 1rem;
+}
