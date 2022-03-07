@@ -1,45 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import InputText from "./InputText";
 import "../components/Form.css";
 import SelectInput from "./SelectInput";
 import RadioInput from "./RadioInput";
+import Button from "./Button";
 
-const FormGenerator = ({ formData }) => {
-  // switch (type) {
-  //   case "text":
-  //     return (
-  //       <InputText
-  //         label={label}
-  //         type={type}
-  //         placeholder={placeholder}
-  //         required={required}
-  //       />
-  //     );
-
-  //   case "select":
-  //     return (
-  //       <SelectInput
-  //         label={label}
-  //         type={type}
-  //         placeholder={placeholder}
-  //         required={required}
-  //       />
-  //     );
-
-  //   case "checkbox":
-  //     return (
-  //       <RadioInput
-  //         label={label}
-  //         type={type}
-  //         placeholder={placeholder}
-  //         required={required}
-  //       />
-  //     );
-  // }
-
+const FormGenerator = ({ formData, submit }) => {
   const clickHandler = (e) => {
     e.preventDefault();
-    console.log("Submitted");
+    console.log();
   };
 
   return (
@@ -108,9 +77,10 @@ const FormGenerator = ({ formData }) => {
           }
         })}
 
-        <button type='submit' className='submit-btn'>
+        {/* <button type='submit' className='submit-btn'>
           Submit Now
-        </button>
+        </button> */}
+        <Button type={submit} />
       </form>
     </div>
   );
