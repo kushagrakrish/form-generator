@@ -1,19 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import InputText from "./InputText";
 import "../components/Form.css";
 import SelectInput from "./SelectInput";
 import RadioInput from "./RadioInput";
 import Button from "./Button";
 
-const FormGenerator = ({ formData, submit }) => {
-  const clickHandler = (e) => {
-    e.preventDefault();
-    console.log();
-  };
-
+const FormGenerator = ({ formData, submit, handleSubmit }) => {
   return (
     <div className='container'>
-      <form className='form-outer' onSubmit={(e) => clickHandler(e)}>
+      <form className='form-outer' onSubmit={handleSubmit}>
         {formData.map((data, id) => {
           switch (data.type) {
             case "text":
@@ -76,10 +71,6 @@ const FormGenerator = ({ formData, submit }) => {
               );
           }
         })}
-
-        {/* <button type='submit' className='submit-btn'>
-          Submit Now
-        </button> */}
         <Button type={submit} />
       </form>
     </div>

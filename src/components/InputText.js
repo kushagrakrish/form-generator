@@ -1,7 +1,8 @@
 import React from "react";
 import "../components/Form.css";
 
-const InputText = ({ type, placeholder, required, label }) => {
+const InputText = (props) => {
+  const { type, placeholder = "Default Value", required, label } = props;
   return (
     <div>
       <label>{label}</label>

@@ -1,6 +1,7 @@
 import React from "react";
 
-const RadioInput = ({ label, type, required }) => {
+const RadioInput = (props) => {
+  const { label, type, required } = props;
   return (
     <div>
       <label className='radio-label'>{label}</label>
