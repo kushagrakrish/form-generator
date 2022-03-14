@@ -1,7 +1,7 @@
 import React from "react";
 
 const SelectInput = (props) => {
-  const { type, required, label, id, field_options } = props;
+  const { type, required, label, field_options } = props;
   return (
     <div>
       <label className='select-input'>{label}</label>

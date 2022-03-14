@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
-import FormGenerator from "./components/FormGenerator";
 
 ReactDOM.render(
   <React.StrictMode>

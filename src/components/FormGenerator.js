@@ -69,8 +69,11 @@ const FormGenerator = ({ formData, submit, handleSubmit }) => {
                   key={id}
                 />
               );
+            default:
+              return "Nothing Found";
           }
         })}
+
         <Button type={submit} />
       </form>
     </div>
